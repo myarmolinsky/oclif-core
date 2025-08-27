@@ -50,7 +50,7 @@ export class CommandHelp extends HelpFormatter {
 
   protected arg(arg: Command.Arg.Any): string {
     const name = arg.name.toUpperCase()
-    if (arg.required) return `${name}`
+    if (arg.required) return `<${name}>`
     return `[${name}]`
   }
 
